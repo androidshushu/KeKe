@@ -105,15 +105,16 @@ captures/
 
 # IntelliJ
 *.iml
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/gradle.xml
-.idea/dictionaries
-.idea/libraries
-.idea/misc.xml
-.idea/modules.xml
-.idea/uiDesigner.xml
-.idea/vcs.xml
+.idea/
+#.idea/workspace.xml
+#.idea/tasks.xml
+#.idea/gradle.xml
+#.idea/dictionaries
+#.idea/libraries
+#.idea/misc.xml
+#.idea/modules.xml
+#.idea/uiDesigner.xml
+#.idea/vcs.xml
 .settings/org.eclipse.jdt.core.prefs
 bin/*
 gen/*
