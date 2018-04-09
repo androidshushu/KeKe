@@ -1,9 +1,5 @@
 <resources>
-    <string name="app_name">KeKe</string>
-    <string name="title_name1"> 首页</string>
-    <string name="title_name2">发现</string>
-    <string name="title_name3">下载</string>
-    <string name="title_name4">我的</string>
+    <string name="app_name">科课</string>
 
 <!--闪屏页展示信息-->
     <string name="slide_1_african_story_books">Whatever is worth doing is worth doing well.</string>
