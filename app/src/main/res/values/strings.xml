@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">KeKe</string>
+    <string name="splash_name"> 闪屏页</string>
     <string name="title_name1"> 首页</string>
     <string name="title_name2">发现</string>
     <string name="title_name3">下载</string>
@@ -15,4 +16,24 @@
     <string name="slide_3_download_and_go_subtitle" >On the bus, in a train, wherever you are - the books are there too.</string>
     <string name="slide_4_different_languages_subtitle">English, Zulu, Afrikaans, Xhosa and more!</string>
     <string name="view_sample_tut">View Tutorial Example</string>
+    <string name="text_setting">设置</string>
+    <string name="guide_name">引导页</string>
+    <string name="text_user_name">用户名：</string>
+    <string name="text_age">年龄：</string>
+    <string name="text_desc">简介：</string>
+    <string name="text_boy">男</string>
+    <string name="text_girl_f">女</string>
+    <string name="text_password">密码/</string>
+    <string name="text_password_again">确认密码</string>
+    <string name="text_email">邮件</string>
+    <string name="text_register_remind">注册成功需要进行邮箱验证否则无法登录</string>
+    <string name="text_registered">注册</string>
+    <string name="text_registered_successful">注册成功</string>
+    <string name="text_registered_failure">注册失败 e :</string>
+    <string name="text_editor_password">修改密码</string>
+    <string name="text_now_password">旧密码</string>
+    <string name="text_new_password">新密码</string>
+    <string name="text_forget_password">忘记密码</string>
+    <string name="text_now_login">正在登录...</string>
+    <string name="inputIsNull">输入框不能为空</string>
 </resources>

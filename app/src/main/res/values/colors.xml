@@ -8,4 +8,9 @@
     <color name="slide_2">#fb9c25</color>
     <color name="slide_3">#5ab55d</color>
     <color name="slide_4">#ea2d6d</color>
+
+    <color name="base_color">#009ad6</color>
+
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
 </resources>

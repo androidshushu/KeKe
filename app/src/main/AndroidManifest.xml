@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sy0317.keke">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".application.BaseApplication"
@@ -10,15 +19,48 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <!--首页进来直接进到闪屏页-->
+        <activity
+            android:name=".ui.SplashActivity"
+            android:theme="@style/NoActivityFullscreen"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        //另外一个引导页
         <activity android:name="za.co.riggaroo.materialhelptutorial.tutorial.MaterialTutorialActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <!--注册设置界面-->
+        <activity android:name=".ui.SettingActivity"
+            android:label="@string/text_setting"
+            />
+        <!--首页-->
+        <activity android:name=".MainActivity"
+            android:label="@string/splash_name"/>
+        <!--引导页-->
+        <activity android:name=".ui.GuideActivity"
+            android:theme="@style/NoActivityFullscreen"/>
+        <!--登录页-->
+        <activity android:name=".ui.LoginActivity"
+            android:theme="@style/NoActivityFullscreen"/>
+        <!--登录页-->
+        <activity android:name=".ui.RegisteredActivity"
+            android:theme="@style/NoActivityFullscreen"/>
+        <!--登录页-->
+        <activity android:name=".ui.ForgetPasswordActivity"
+            android:theme="@style/NoActivityFullscreen"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.sy0317.keke.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
     </application>
 
 </manifest>
